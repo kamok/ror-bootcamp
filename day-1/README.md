@@ -63,8 +63,5 @@ Tips: This is a very simple program where you collect the value from the user, h
 enter in a tax value, add the tax to the total and print out the result. If the value the 
 user enters is $1.00 and the tax is 5% then the total is $1.05.
 
-Added Difficulty: Build a GUI for this program where the user can enter in multiple prices, adds 
-them up and then calculates the tax. Perhaps some of the items won’t be taxed based on the item 
-type (like food).
 ```
 
