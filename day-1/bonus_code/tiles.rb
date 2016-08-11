@@ -16,20 +16,21 @@
 #User enters Width, Length, and Cost per 1 unit. 
 #Outputs cost, derived by W * L * C
 
-def calc_tile_cost
-  puts "Input surface area!"
-  surface_area = gets.chomp.to_i
+# 86 + 20
+# 20 feet room and 1 dollar per surface area 
 
-  puts "Input cost of each unit!"
-  cost_of_each_unit = gets.chomp.to_i  
+def calc_labor_cost
+  puts "Please enter surface area."
+  surface_area = gets.chomp.to_f
 
-  tile_cost = surface_area * cost_of_each_unit
+  puts "Please enter cost per unit of tiles."
+  cost_per_unit = gets.chomp.to_f
 
+  tiles_cost = surface_area * cost_per_unit
   labor_cost = (surface_area / 20) * 86
 
-  grand_total = tile_cost + labor_cost
+  puts "The total cost is $#{ labor_cost + tiles_cost }"
 
-  puts grand_total
 end
 
-calc_tile_cost
+calc_labor_cost

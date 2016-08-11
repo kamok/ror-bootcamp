@@ -13,17 +13,15 @@
 # Print total plus tax
 
 def calc_tax
-  puts "Please enter a value to be taxed."
-  value = gets.chomp.to_f
+  puts "Please enter an amount to be taxed."
+  amount = gets.chomp.to_f
 
   puts "Please enter a tax rate."
-  tax = gets.chomp.to_f * 0.01
+  tax_rate = gets.chomp.to_f * 0.01
 
-  subtotal = value * tax
-  grand_total = value + subtotal
-
-  puts "Subtotal: $#{subtotal}"
-  puts "Grand Total: $#{grand_total}"
+  subtotal = amount * tax_rate
+  puts "The subtotal is $#{subtotal}"
+  puts "The grand total is $#{subtotal + amount}"
 end
 
 calc_tax
